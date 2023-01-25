@@ -2,7 +2,7 @@
 
 <div align="center">
 
- [![es](https://img.shields.io/badge/lang-es-orange.svg)](https://github.com/walgab/Assignment_for_Algorithms_3/blob/master/README.es.md) ![coverage](https://img.shields.io/badge/coverage-100%-green) ![mutation__tests](https://img.shields.io/badge/mutation__tests-passing-green)
+ [![es](https://img.shields.io/badge/lang-es-orange.svg)](https://github.com/walgab/Assignment_for_Algorithms_3/blob/master/README.es.md) ![coverage](https://img.shields.io/badge/coverage-100%25-green) ![mutation__tests](https://img.shields.io/badge/mutation__tests-passing-green)
 
 </div>
 
