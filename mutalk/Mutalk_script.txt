@@ -1,0 +1,37 @@
+| testSuit analysis alive browser classesToMutate |
+testSuit := {
+	AlgoPenalesTests.
+	EquipoTests.
+	MoralTests.
+	ExperienciaTests.
+	JugadorSuplenteTests.
+	JugadorTitularTests.
+}.
+classesToMutate := { AlgoPenales.
+	Equipo.
+	Moral.
+	Experiencia.
+	Jugador.
+	JugadorSuplente.
+	JugadorTitular.
+	EquipoNoExiste.
+	InputPartidoInvalido.
+	NoHayJugadoresRegistrados.
+}.
+analysis := MutationTestingAnalysis
+    testCasesFrom: testSuit
+    mutating: classesToMutate 
+    using: MutantOperator contents
+    with: AllTestsMethodsRunningMutantEvaluationStrategy new.
+analysis run.
+alive := analysis generalResult aliveMutants.
+
+"Display result in Glamorous Browser"
+browser := GLMTabulator new.
+browser 
+	row: #results;
+	row: #diff.
+browser transmit to: #results.
+browser transmit to: #diff; from: #results; andShow: [ :a | 
+	a diff display: [ :mutant | {((RBParser parseMethod: (mutant mutant originalSource)) formattedCode) . ((RBParser parseMethod: (mutant mutant modifiedSource)) formattedCode)}] ].
+browser openOn: alive.
