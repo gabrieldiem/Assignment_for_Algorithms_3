@@ -2,11 +2,11 @@
 
 <div align="center">
 
- [![es](https://img.shields.io/badge/lang-es-orange.svg)](https://github.com/walgab/Assignment_for_Algorithms_3/blob/master/README.es.md) ![coverage](https://img.shields.io/badge/coverage-100%25-green) ![mutation__tests](https://img.shields.io/badge/mutation__tests-passing-green)
+ [![es](https://img.shields.io/badge/leer_en-espa%C3%B1ol_%F0%9F%87%AA%F0%9F%87%B8-darkgreen?style=flat)](https://github.com/walgab/Assignment_for_Algorithms_3/blob/master/README.es.md) ![coverage](https://img.shields.io/badge/coverage-100%25-green) ![mutation__tests](https://img.shields.io/badge/mutation__tests-passing-green)
 
 </div>
 
-Project number 1 for the subject _Algorithms and Programming 3_ [75.07 - 95.02] at the Faculty of Engineering of the University of Buenos Aires (FIUBA).
+Project number 1 for the subject _Algorithms and Programming 3_ [75.07 - 95.02] Suarez's course 2Q2022 at the Faculty of Engineering of the University of Buenos Aires (FIUBA).
 
 The documentation, variable names, and function names are mostly written in Spanish as it is the language in which the course is taught.
 
